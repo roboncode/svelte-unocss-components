@@ -1,0 +1,38 @@
+.textinput {
+  @apply relative flex gap-2 items-center rounded py-2 px-3
+      focus-within:border-primary focus-within:!border-opacity-100;
+
+  label {
+    @apply absolute top-2 block text-xs pointer-events-none text-opacity-40;
+  }
+
+  input,
+  textarea {
+    @apply border-none bg-transparent focus:outline-none h-full w-full resize-none py-1 px-0 focus:ring-0;
+  }
+
+  label ~ input,
+  label ~ textarea {
+    @apply pt-5 m-0;
+    font-family: inherit;
+    font-size: 100%;
+    line-height: inherit;
+    color: inherit;
+  }
+
+  input[disabled] {
+    @apply opacity-30;
+
+    label {
+      @apply text-opacity-40 -mb-1;
+    }
+  }
+
+  &.has-error {
+    @apply !border-red-600 focus-within:!border-red-600 focus-within:!border-opacity-100;
+
+    label {
+      @apply text-red-400 text-opacity-100;
+    }
+  }
+}

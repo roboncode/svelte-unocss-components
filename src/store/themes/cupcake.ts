@@ -1,0 +1,33 @@
+export const cupcake = {
+  // base
+  'base-100': '#faf7f5',
+  'base-200': '#efeae6',
+  'base-300': '#e7e2df',
+  'base-content': '#261230',
+  'neutral': '#261230',
+  'neutral-focus': '#200f29',
+  'neutral-content': '#ffffff',
+  // primary
+  'primary': '#65c3c8',
+  'primary-focus': '#42b2b8',
+  'primary-content': '#ffffff',
+  // secondary
+  'secondary': '#ef9fbc',
+  'secondary-focus': '#e7739e',
+  'secondary-content': '#ffffff',
+  // accent
+  'accent': '#eeaf3a',
+  'accent-focus': '#e09915',
+  'accent-content': '#ffffff',
+  // state
+  'disabled': '#f5f7f9',
+  'disabled-content': '#dadde1',
+  'error': '#ff5724',
+  'error-content': '#ffffff',
+  'success': '#009485',
+  'success-content': '#ffffff',
+  'info': '#1c92f2',
+  'info-content': '#ffffff',
+  'warning': '#ff9900',
+  'warning-content': '#ffffff',
+}

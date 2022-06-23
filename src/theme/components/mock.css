@@ -1,0 +1,71 @@
+.mock-window {
+  @apply relative pt-5 overflow-hidden overflow-y-auto;
+  &:before {
+    content: '';
+    box-shadow: 1.4em 0, 2.8em 0, 4.2em 0;
+    @apply block w-3 h-3 rounded-full opacity-30 mb-4;
+  }
+}
+
+.mock-window-mac:hover {
+  &:before {
+    content: '';
+    box-shadow: 1.4em 0 var(--sa-error), 2.8em 0 var(--sa-warning), 4.2em 0 var(--sa-success);
+    @apply opacity-100;
+  }
+}
+
+.mock-window.mock-window-neutral {
+  border: var(--sa-border) solid var(--sa-neutral);
+  background-color: var(--sa-neutral);
+}
+
+.mock-window.mock-window-primary {
+  border: var(--sa-border) solid var(--sa-primary);
+  background-color: var(--sa-primary);
+}
+
+.mock-window.mock-window-secondary {
+  border: var(--sa-border) solid var(--sa-secondary);
+  background-color: var(--sa-secondary);
+}
+
+.mock-window.mock-window-accent {
+  border: var(--sa-border) solid var(--sa-accent);
+  background-color: var(--sa-accent);
+}
+
+.mock-window.mock-window-base-100 {
+  border: var(--sa-border) solid var(--sa-base-100);
+  background-color: var(--sa-base-100);
+}
+
+.mock-window.mock-window-base-200 {
+  border: var(--sa-border) solid var(--sa-base-200);
+  background-color: var(--sa-base-200);
+}
+
+.mock-window.mock-window-base-300 {
+  border: var(--sa-border) solid var(--sa-base-300);
+  background-color: var(--sa-base-300);
+}
+
+.mock-window.mock-window-info {
+  border: var(--sa-border) solid var(--sa-neutral);
+  background-color: var(--sa-neutral);
+}
+
+.mock-window.mock-window-success {
+  border: var(--sa-border) solid var(--sa-success);
+  background-color: var(--sa-success);
+}
+
+.mock-window.mock-window-warning {
+  border: var(--sa-border) solid var(--sa-warning);
+  background-color: var(--sa-warning);
+}
+
+.mock-window.mock-window-error {
+  border: var(--sa-border) solid var(--sa-error);
+  background-color: var(--sa-error);
+}

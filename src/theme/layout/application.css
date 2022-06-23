@@ -1,0 +1,7 @@
+.sa-main {
+  @apply min-h-screen w-full bg-white dark:bg-dark-900 dark:text-gray-300 overflow-x-hidden;
+}
+
+.sa-content {
+  @apply w-full mx-auto max-w-4xl;
+}

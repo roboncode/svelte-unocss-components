@@ -1,0 +1,23 @@
+/* primary */
+.focus\:ring-primary:focus {
+  outline: 3px solid var(--sa-primary-focus);
+  outline-offset: 2px;
+}
+
+/* secondary */
+.focus\:ring-secondary:focus {
+  outline: 3px solid var(--sa-secondary-focus);
+  outline-offset: 2px;
+}
+
+/* accent */
+.focus\:ring-accent:focus {
+  outline: 3px solid var(--sa-accent-focus);
+  outline-offset: 2px;
+}
+
+/* neutral */
+.focus\:ring-neutral:focus {
+  outline: 3px solid var(--sa-neutral-focus);
+  outline-offset: 2px;
+}

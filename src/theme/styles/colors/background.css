@@ -1,0 +1,251 @@
+/* TODO: Change this to fill-primary or color-primary? since it changes text? */
+/* primary */
+.hover\:bg-primary:hover,
+.focus\:bg-primary:focus {
+  background-color: var(--sa-primary-focus);
+  color: var(--sa-primary-content) !important;
+}
+
+.active\:bg-primary.active,
+.active\:bg-primary[active]:not([active='false']) {
+  background-color: var(--sa-primary-active);
+  color: var(--sa-primary-content) !important;
+}
+
+/* secondary */
+.hover\:bg-secondary:hover,
+.focus\:bg-secondary:focus {
+  background-color: var(--sa-secondary-focus);
+  color: var(--sa-secondary-content) !important;
+}
+
+.active\:bg-secondary.active,
+.active\:bg-secondary[active]:not([active='false']) {
+  background-color: var(--sa-secondary-active);
+  color: var(--sa-secondary-content) !important;
+}
+
+/* accent */
+.hover\:bg-accent:hover,
+.focus\:bg-accent:focus {
+  background-color: var(--sa-accent-focus);
+  color: var(--sa-accent-content) !important;
+}
+
+.active\:bg-accent.active,
+.active\:bg-accent[active]:not([active='false']) {
+  background-color: var(--sa-accent-active);
+  color: var(--sa-accent-content) !important;
+}
+
+/* neutral */
+.hover\:bg-neutral:hover,
+.focus\:bg-neutral:focus {
+  background-color: var(--sa-neutral-focus);
+  color: var(--sa-neutral-content) !important;
+}
+
+.active\:bg-neutral.active,
+.active\:bg-neutral[active]:not([active='false']) {
+  background-color: var(--sa-neutral-active);
+  color: var(--sa-neutral-content) !important;
+}
+
+/* info */
+.hover\:bg-info:hover,
+.focus\:bg-info:focus {
+  background-color: var(--sa-info);
+  color: var(--sa-info-content) !important;
+}
+
+.active\:bg-info.active,
+.active\:bg-info[active]:not([active='false']) {
+  background-color: var(--sa-info);
+  color: var(--sa-info-content) !important;
+}
+
+/* success */
+.hover\:bg-success:hover,
+.focus\:bg-success:focus {
+  background-color: var(--sa-success);
+  color: var(--sa-success-content) !important;
+}
+
+.active\:bg-success.active,
+.active\:bg-success[active]:not([active='false']) {
+  background-color: var(--sa-success);
+  color: var(--sa-success-content) !important;
+}
+
+/* warning */
+.hover\:bg-warning:hover,
+.focus\:bg-warning:focus {
+  background-color: var(--sa-warning);
+  color: var(--sa-warning-content) !important;
+}
+
+.active\:bg-warning.active,
+.active\:bg-warning[active]:not([active='false']) {
+  background-color: var(--sa-warning);
+  color: var(--sa-warning-content) !important;
+}
+
+/* error */
+.hover\:bg-error:hover,
+.focus\:bg-error:focus {
+  background-color: var(--sa-error);
+  color: var(--sa-error-content) !important;
+}
+
+.active\:bg-error.active,
+.active\:bg-error[active]:not([active='false']) {
+  background-color: var(--sa-error);
+  color: var(--sa-error-content) !important;
+}
+
+/* base-100 */
+.bg-base-100 {
+  background-color: var(--sa-base-100);
+  color: var(--sa-base-content);
+}
+
+.bg-base-100 .bg-content {
+  background-color: var(--sa-base-content);
+}
+
+/* base-200 */
+.bg-base-200 {
+  background-color: var(--sa-base-200);
+  color: var(--sa-base-content);
+}
+
+.bg-base-200 .bg-content {
+  background-color: var(--sa-base-content);
+}
+
+/* base-300 */
+.bg-base-300 {
+  background-color: var(--sa-base-300);
+  color: var(--sa-base-content);
+}
+
+.bg-base-300 .bg-content {
+  background-color: var(--sa-base-content);
+}
+
+/* content */
+.bg-base-content {
+  background-color: var(--sa-base-content);
+}
+
+/* neutral */
+.bg-neutral {
+  background-color: var(--sa-neutral);
+  color: var(--sa-neutral-content);
+}
+
+.bg-neutral-focus {
+  background-color: var(--sa-neutral-focus);
+}
+
+.bg-neutral-content, .bg-neutral .bg-content {
+  background-color: var(--sa-neutral-content);
+}
+
+/* primary */
+.bg-primary {
+  background-color: var(--sa-primary);
+  color: var(--sa-primary-content);
+}
+
+.bg-primary-focus {
+  background-color: var(--sa-primary-focus);
+}
+
+.bg-primary-content, .bg-primary .bg-content {
+  background-color: var(--sa-primary-content);
+}
+
+/* secondary */
+.bg-secondary {
+  background-color: var(--sa-secondary);
+  color: var(--sa-secondary-content);
+}
+
+.bg-secondary-focus {
+  background-color: var(--sa-secondary-focus);
+}
+
+.bg-secondary-content, .bg-secondary .bg-content {
+  background-color: var(--sa-secondary-content);
+}
+
+/* accent */
+.bg-accent {
+  background-color: var(--sa-accent);
+  color: var(--sa-accent-content);
+}
+
+.bg-accent-focus {
+  background-color: var(--sa-accent-focus);
+}
+
+.bg-accent-content, .bg-accent .bg-content {
+  background-color: var(--sa-accent-content);
+}
+
+/* error */
+.bg-error {
+  background-color: var(--sa-error);
+  color: var(--sa-error-content);
+}
+
+.bg-error-focus {
+  background-color: var(--sa-error-focus);
+}
+
+.bg-error-content, .bg-error .bg-content {
+  background-color: var(--sa-error-content);
+}
+
+/* success */
+.bg-success {
+  background-color: var(--sa-success);
+  color: var(--sa-success-content);
+}
+
+.bg-success-focus {
+  background-color: var(--sa-success-focus);
+}
+
+.bg-success-content, .bg-error .bg-content {
+  background-color: var(--sa-success-content);
+}
+
+/* info */
+.bg-info {
+  background-color: var(--sa-info);
+  color: var(--sa-info-content);
+}
+
+.bg-info-focus {
+  background-color: var(--sa-info-focus);
+}
+
+.bg-info-content, .bg-error .bg-content {
+  background-color: var(--sa-info-content);
+}
+
+/* warning */
+.bg-warning {
+  background-color: var(--sa-warning);
+  color: var(--sa-warning-content);
+}
+
+.bg-warning-focus {
+  background-color: var(--sa-warning-focus);
+}
+
+.bg-warning-content, .bg-error .bg-content {
+  background-color: var(--sa-warning-content);
+}

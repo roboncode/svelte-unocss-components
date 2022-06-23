@@ -1,0 +1,45 @@
+.tooltip {
+  display: inline-block;
+
+  div[name='tooltip'] {
+    @apply absolute flex items-center gap-2 px-3 py-2 
+        text-sm bg-black text-white 
+        font-semibold rounded-lg z-50;
+  }
+
+  div[name='arrow'],
+  div[name='arrow']::before {
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    background-color: inherit;
+  }
+
+  div[name='arrow'] {
+    visibility: hidden;
+  }
+
+  div[name='arrow']::before {
+    visibility: visible;
+    content: '';
+    transform: rotate(45deg);
+  }
+
+  div[data-popper-placement^='top'] > div[name='arrow'] {
+    bottom: -4px;
+  }
+
+  div[data-popper-placement^='bottom'] > div[name='arrow'] {
+    top: -4px;
+  }
+
+  div[data-popper-placement^='left'] > div[name='arrow'] {
+    right: -4px;
+    /* right: 0; */
+  }
+
+  div[data-popper-placement^='right'] > div[name='arrow'] {
+    left: -4px;
+    /* left: -8px; */
+  }
+}

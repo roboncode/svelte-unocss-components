@@ -1,0 +1,49 @@
+/* .progress-circle {
+    @apply absolute top-0 left-0 w-full h-full rounded-full;
+  } */
+
+/* https://www.freecodecamp.org/news/css-only-pie-chart/ */
+
+.progress-circle {
+  --value: 30;
+  --thickness: 22px;
+  --color: black;
+  --size: 100px;
+
+  width: var(--size);
+  aspect-ratio: 1;
+  position: relative;
+  place-content: center;
+}
+
+.progress-circle:before,
+.progress-circle:after {
+  content: '';
+  position: absolute;
+  border-radius: 50%;
+}
+
+.progress-circle:before {
+  inset: 0;
+  background: radial-gradient(farthest-side, var(--color) 98%, #0000) top/var(--thickness) var(--thickness) no-repeat,
+    conic-gradient(var(--color) calc(var(--value) * 1%), #0000 0);
+}
+
+.progress-circle-radial:before {
+  -webkit-mask: radial-gradient(farthest-side, #0000 calc(99% - var(--thickness)), #000 calc(100% - var(--thickness)));
+  mask: radial-gradient(farthest-side, #0000 calc(99% - var(--thickness)), #000 calc(100% - var(--thickness)));
+}
+
+.progress-circle:after {
+  inset: calc(50% - var(--thickness) / 2);
+  background: var(--color);
+  transform: rotate(calc(var(--value) * 3.6deg)) translateY(calc(50% - var(--size) / 2));
+}
+
+.progress-circle-squared:before {
+  background-size: 0 0, auto;
+}
+
+.progress-circle-squared:after {
+  content: none;
+}

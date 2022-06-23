@@ -1,0 +1,13 @@
+.dropdown {
+  @apply relative z-10;
+
+  &-enter-active,
+  &-leave-active {
+    transition: opacity 0.3s ease;
+  }
+
+  &-enter-from,
+  &-leave-to {
+    opacity: 0;
+  }
+}

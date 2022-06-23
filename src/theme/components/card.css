@@ -1,0 +1,34 @@
+.card {
+  @apply relative flex flex-col gap-2 rounded-lg overflow-hidden leading-6;
+}
+
+.card-outline {
+  border: var(--sa-border) solid var(--sa-base-300);
+}
+
+.card-body {
+  @apply flex flex-grow flex-col gap-4 p-8;
+}
+
+.card-title {
+  @apply text-2xl font-semibold;
+}
+
+.card-actions {
+  @apply flex flex-wrap items-center gap-2 mt-2;
+}
+
+.card-break {
+  @apply my-3 -mx-8 border-t-2;
+  border-color: var(--sa-base-300);
+}
+
+.card-compact {
+  .card-body {
+    @apply p-4;
+  }
+
+  .card-actions {
+    @apply p-0;
+  }
+}

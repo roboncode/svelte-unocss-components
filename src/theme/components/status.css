@@ -1,0 +1,11 @@
+.status {
+  @apply absolute top-0 left-0 w-full h-full rounded-full transform rotate-45 pointer-events-none;
+}
+
+.status-indicator {
+  @apply w-5 h-5 rounded-full border-3;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

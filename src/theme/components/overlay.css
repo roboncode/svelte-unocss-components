@@ -1,0 +1,137 @@
+.overlay {
+  @apply fixed top-0 left-0 w-full h-full overflow-y-auto;
+
+  &-top {
+    @apply fixed top-0 left-0 w-full;
+  }
+  &-left {
+    @apply fixed top-0 left-0 h-full;
+  }
+  &-right {
+    @apply fixed top-0 right-0 h-full;
+  }
+  &-bottom {
+    @apply fixed bottom-0 left-0 w-full;
+  }
+  &-center {
+    @apply fixed top-0 left-0 w-full h-full flex sm:items-center justify-center overflow-auto pointer-events-none;
+  }
+  &-top > *,
+  &-left > *,
+  &-right > *,
+  &-bottom > *,
+  &-center > * {
+    @apply pointer-events-auto;
+  }
+
+  /* Use this class to contain overlay inside parent */
+  &-absolute > &,
+  &-absolute > &-top,
+  &-absolute > &-left,
+  &-absolute > &-right,
+  &-absolute > &-bottom,
+  &-absolute > &-center {
+    @apply absolute;
+  }
+
+  /* Use this class to share overlay with content */
+  &-relative > &,
+  &-relative > &-top,
+  &-relative > &-left,
+  &-relative > &-right,
+  &-relative > &-bottom,
+  &-relative > &-center {
+    @apply relative;
+  }
+
+  /* Default opacity */
+  &-lighten > & {
+    @apply bg-dark-200 bg-opacity-10;
+  }
+
+  &-darken > & {
+    @apply bg-dark-900 bg-opacity-30;
+  }
+
+  /* Overlay */
+  &-enter-active,
+  &-leave-active {
+    transition: opacity 0.3s ease;
+  }
+
+  &-enter-from,
+  &-leave-to {
+    opacity: 0;
+  }
+
+  /* Overlay Center */
+  &-center-enter-active {
+    transition: opacity 0.2s ease-out, transform 0.2s ease-out;
+  }
+
+  &-center-leave-active {
+    transition: opacity 0.2s ease-out, transform 0.2s ease-in;
+  }
+
+  &-center-enter-from,
+  &-center-leave-to {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+
+  /* Overlay Left */
+  &-left-enter-active {
+    transition: transform 0.2s ease-out;
+  }
+
+  &-left-leave-active {
+    transition: transform 0.2s ease-in;
+  }
+
+  &-left-enter-from,
+  &-left-leave-to {
+    transform: translateX(-100%);
+  }
+
+  /* Overlay Right */
+  &-right-enter-active {
+    transition: transform 0.2s ease-out;
+  }
+
+  &-right-leave-active {
+    transition: transform 0.2s ease-in;
+  }
+
+  &-right-enter-from,
+  &-right-leave-to {
+    transform: translateX(100%);
+  }
+
+  /* Overlay Bottom */
+  &-bottom-enter-active {
+    transition: transform 0.2s ease-out;
+  }
+
+  &-bottom-leave-active {
+    transition: transform 0.2s ease-in;
+  }
+
+  &-bottom-enter-from,
+  &-bottom-leave-to {
+    transform: translateY(100%);
+  }
+
+  /* Overlay Top */
+  &-top-enter-active {
+    transition: transform 0.2s ease-out;
+  }
+
+  &-top-leave-active {
+    transition: transform 0.2s ease-in;
+  }
+
+  &-top-enter-from,
+  &-top-leave-to {
+    transform: translateY(-100%);
+  }
+}

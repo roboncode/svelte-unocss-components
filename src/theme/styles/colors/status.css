@@ -1,0 +1,68 @@
+/* status */
+[status='base-100']:before {
+  background-color: var(--sa-base-100);
+}
+
+[status='base-200']:before {
+  background-color: var(--sa-base-200);
+}
+
+[status='base-300']:before {
+  background-color: var(--sa-base-300);
+}
+
+[status='base-content']:before {
+  background-color: var(--sa-base-content);
+}
+
+[status='neutral']:before {
+  background-color: var(--sa-neutral);
+}
+
+[status='neutral-focus']:before {
+  background-color: var(--sa-neutral-focus);
+}
+
+[status='primary']:before {
+  background-color: var(--sa-primary);
+}
+
+[status='primary-focus']:before {
+  background-color: var(--sa-primary-focus);
+}
+
+[status='secondary']:before {
+  background-color: var(--sa-secondary);
+}
+
+[status='secondary-focus']:before {
+  background-color: var(--sa-secondary-focus);
+}
+
+[status='accent']:before {
+  background-color: var(--sa-accent);
+}
+
+[status='accent-focus']:before {
+  background-color: var(--sa-accent-focus);
+}
+
+[status='error']:before {
+  background-color: var(--sa-error);
+}
+
+[status='success']:before {
+  background-color: var(--sa-success);
+}
+
+[status='info']:before {
+  background-color: var(--sa-info);
+}
+
+[status='warning']:before {
+  background-color: var(--sa-warning);
+}
+
+[status='disabled']:before {
+  background-color: var(--sa-disabled);
+}

@@ -1,0 +1,10 @@
+/* {name} */
+.hover\:border-{name}:hover,
+.focus\:border-{name}:focus {
+  border-color: var(--sa-{name}-focus);
+}
+
+.active\:border-{name}.active,
+.active\:border-{name}[active]:not([active='false']) {
+  border-color: var(--sa-{name}-active);
+}

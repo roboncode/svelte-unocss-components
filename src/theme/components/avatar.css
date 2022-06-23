@@ -1,0 +1,14 @@
+.avatar {
+  @apply relative inline-flex;
+
+  img {
+    @apply w-full h-full object-cover;
+    aspect-ratio: 1/1;
+  }
+
+  & > div {
+    @apply flex justify-center items-center;
+    aspect-ratio: 1/1;
+    overflow: hidden;
+  }
+}

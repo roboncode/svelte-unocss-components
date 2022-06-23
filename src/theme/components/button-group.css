@@ -1,0 +1,65 @@
+.btn-group {
+  @apply flex justify-between items-center select-none;
+}
+
+.btn-group input[type='radio'] {
+  appearance: none;
+}
+
+.btn-group input[type='radio']:before {
+  content: attr(data-title);
+}
+
+.btn-group-autosize .btn {
+  @apply h-full;
+  aspect-ratio: 1/1;
+}
+
+.btn-group:not(.btn-group-outline) .btn-active,
+.btn-group:not(.btn-group-outline) .btn:checked,
+.btn-group:not(.btn-group-outline) .btn:checked + label {
+  background-color: var(--sa-btn-group-active);
+  color: var(--sa-btn-group-active-content);
+
+  &:hover {
+    background-color: var(--sa-btn-group-active-focus);
+  }
+
+  * {
+    opacity: 1;
+  }
+}
+
+.btn-group-rounded {
+  @apply rounded;
+
+  .btn:not(.btn-first):not(.btn-last) {
+    @apply rounded-none;
+  }
+
+  .btn-first {
+    @apply !rounded-r-none;
+  }
+
+  .btn-last {
+    @apply !rounded-l-none;
+  }
+}
+
+.btn-group-rounded .btn {
+  @apply rounded;
+}
+
+.btn-group-circle .btn {
+  @apply rounded-full;
+}
+
+.btn-group-outline .btn-active {
+  border: var(--sa-border) solid var(--sa-neutral);
+  color: var(--sa-neutral);
+
+  &:hover {
+    border-color: var(--sa-neutral-focus);
+    color: var(--sa-neutral-focus);
+  }
+}

@@ -1,0 +1,12 @@
+/* {name} */
+.hover\:bg-{name}:hover,
+.focus\:bg-{name}:focus {
+  background-color: var(--sa-{name}-focus);
+  color: var(--sa-{name}-content) !important;
+}
+
+.active\:bg-{name}.active,
+.active\:bg-{name}[active]:not([active='false']) {
+  background-color: var(--sa-{name}-active);
+  color: var(--sa-{name}-content) !important;
+}

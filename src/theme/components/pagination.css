@@ -1,0 +1,199 @@
+.pagination {
+  @apply flex justify-between items-center h-8 overflow-hidden select-none;
+}
+
+.pagination-btn {
+  @apply font-bold h-full bg-transparent cursor-pointer;
+  aspect-ratio: 1/1;
+}
+
+.pagination-btn-prev {
+  @apply flex items-center justify-center h-full;
+  aspect-ratio: 1/1;
+
+  &[disabled] {
+    @apply opacity-20 pointer-events-none;
+  }
+}
+
+.pagination-btn-next {
+  @apply flex items-center justify-center h-full;
+  aspect-ratio: 1/1;
+
+  &[disabled] {
+    @apply opacity-20 pointer-events-none;
+  }
+}
+
+.pagination-more {
+  @apply flex flex-col h-full font-bold items-center justify-center pointer-events-none;
+  aspect-ratio: 1/1;
+  line-height: 0;
+
+  * {
+    opacity: 0;
+  }
+}
+
+.pagination-more:after {
+  margin-top: 8px;
+  content: '...';
+}
+
+.pagination:not(.pagination-outline) .pagination-btn-active {
+  background-color: var(--sa-neutral);
+  color: var(--sa-neutral-content);
+
+  &:hover {
+    background-color: var(--sa-neutral-focus);
+  }
+
+  * {
+    opacity: 1;
+  }
+}
+
+.pagination-rounded .pagination-btn {
+  @apply rounded;
+}
+
+.pagination-circle .pagination-btn {
+  @apply rounded-full;
+}
+
+.pagination-outline .pagination-btn-active {
+  border: var(--sa-border) solid var(--sa-neutral);
+  color: var(--sa-neutral);
+
+  &:hover {
+    border-color: var(--sa-neutral-focus);
+    color: var(--sa-neutral-focus);
+  }
+}
+
+.pagination-primary:not(.pagination-outline) .pagination-btn-active {
+  background-color: var(--sa-primary);
+  color: var(--sa-primary-content);
+
+  &:hover {
+    background-color: var(--sa-primary-focus);
+  }
+}
+
+.pagination-primary.pagination-outline .pagination-btn-active {
+  border: var(--sa-border) solid var(--sa-primary);
+  color: var(--sa-primary);
+
+  &:hover {
+    border-color: var(--sa-primary-focus);
+    color: var(--sa-primary-focus);
+  }
+}
+
+.pagination-secondary:not(.pagination-outline) .pagination-btn-active {
+  background-color: var(--sa-secondary);
+  color: var(--sa-secondary-content);
+
+  &:hover {
+    background-color: var(--sa-secondary-focus);
+  }
+}
+
+.pagination-secondary.pagination-outline .pagination-btn-active {
+  border: var(--sa-border) solid var(--sa-secondary);
+  color: var(--sa-secondary);
+
+  &:hover {
+    border-color: var(--sa-secondary-focus);
+    color: var(--sa-secondary-focus);
+  }
+}
+
+.pagination-accent:not(.pagination-outline) .pagination-btn-active {
+  background-color: var(--sa-accent);
+  color: var(--sa-accent-content);
+
+  &:hover {
+    background-color: var(--sa-accent-focus);
+  }
+}
+
+.pagination-accent.pagination-outline .pagination-btn-active {
+  border: var(--sa-border) solid var(--sa-accent);
+  color: var(--sa-accent);
+
+  &:hover {
+    border-color: var(--sa-accent-focus);
+    color: var(--sa-accent-focus);
+  }
+}
+
+.pagination-base-100:not(.pagination-outline) .pagination-btn-active {
+  background-color: var(--sa-base-100);
+  color: var(--sa-base-content);
+}
+
+.pagination-base-100.pagination-outline .pagination-btn-active {
+  border: var(--sa-border) solid var(--sa-base-100);
+  color: var(--sa-base-100);
+}
+
+.pagination-base-200:not(.pagination-outline) .pagination-btn-active {
+  background-color: var(--sa-base-200);
+  color: var(--sa-base-content);
+}
+
+.pagination-base-200.pagination-outline .pagination-btn-active {
+  border: var(--sa-border) solid var(--sa-base-200);
+  color: var(--sa-base-200);
+}
+
+.pagination-base-300:not(.pagination-outline) .pagination-btn-active {
+  background-color: var(--sa-base-300);
+  color: var(--sa-base-content);
+}
+
+.pagination-base-300.pagination-outline .pagination-btn-active {
+  border: var(--sa-border) solid var(--sa-base-300);
+  color: var(--sa-base-300);
+}
+
+.pagination-info:not(.pagination-outline) .pagination-btn-active {
+  background-color: var(--sa-info);
+  color: var(--sa-info-content);
+}
+
+.pagination-info.pagination-outline .pagination-btn-active {
+  border: var(--sa-border) solid var(--sa-info);
+  color: var(--sa-info);
+}
+
+.pagination-success:not(.pagination-outline) .pagination-btn-active {
+  background-color: var(--sa-success);
+  color: var(--sa-success-content);
+}
+
+.pagination-success.pagination-outline .pagination-btn-active {
+  border: var(--sa-border) solid var(--sa-success);
+  color: var(--sa-success);
+}
+
+.pagination-warning:not(.pagination-outline) .pagination-btn-active {
+  background-color: var(--sa-warning);
+  color: var(--sa-warning-content);
+}
+
+.pagination-warning.pagination-outline .pagination-btn-active {
+  border: var(--sa-border) solid var(--sa-warning);
+  color: var(--sa-warning);
+}
+
+.pagination-error:not(.pagination-outline) .pagination-btn-active {
+  background-color: var(--sa-error);
+  color: var(--sa-error-content);
+}
+
+.pagination-error.pagination-outline .pagination-btn-active {
+  border: var(--sa-border) solid var(--sa-error);
+  color: var(--sa-error);
+}

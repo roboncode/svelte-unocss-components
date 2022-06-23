@@ -1,0 +1,7 @@
+.border-{name} {
+  border-color: var(--sa-{name});
+}
+
+.border-{name}-content {
+  border-color: var(--sa-{name}-content);
+}

@@ -1,0 +1,53 @@
+/* 
+  https://stackoverflow.com/questions/31617136/avoid-elliptical-shape-in-css-border-radius
+ */
+.divider {
+  @apply flex items-center justify-center;
+
+  --color: var(--sa-divider-color);
+  --thickness: var(--sa-divider-thickness);
+  --cap: 100000000000000px;
+
+  &:before {
+    @apply flex-grow;
+    content: '';
+    height: var(--thickness);
+    background-color: var(--color);
+    border-radius: var(--cap);
+  }
+
+  &:after {
+    @apply flex-grow;
+    content: '';
+    height: var(--thickness);
+    background-color: var(--color);
+    border-radius: var(--cap);
+  }
+}
+
+.divider-vertical {
+  @apply flex-col;
+
+  &:before {
+    @apply flex-grow;
+    content: '';
+    height: auto;
+    width: var(--thickness);
+    background-color: var(--color);
+    border-radius: var(--cap);
+  }
+
+  &:after {
+    @apply flex-grow;
+    content: '';
+    height: auto;
+    width: var(--thickness);
+    background-color: var(--color);
+    border-radius: var(--cap);
+  }
+}
+
+/* TODO: Example using variable to create custom */
+.divider-secondary {
+  --color: var(--sa-secondary);
+}

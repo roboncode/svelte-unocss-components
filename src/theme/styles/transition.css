@@ -1,0 +1,58 @@
+/* Stripe Animation */
+.animate-right {
+  animation: dark-animate-right 1s linear infinite;
+}
+
+/* Spin */
+.animate-spin.speed-300,
+[speed='300'] {
+  animation: dark-spin-rotate 0.25s linear infinite;
+}
+
+.animate-spin.speed-200,
+[speed='200'] {
+  animation: dark-spin-rotate 0.5s linear infinite;
+}
+
+.animate-spin.speed-100,
+[speed='100'] {
+  animation: dark-spin-rotate 0.75s linear infinite;
+}
+
+.animate-spin.-speed-100,
+[speed='-100'] {
+  animation: dark-spin-rotate 2s linear infinite;
+}
+
+.animate-spin.-speed-200,
+[speed='-200'] {
+  animation: dark-spin-rotate 3s linear infinite;
+}
+
+.animate-spin.-speed-300,
+[speed='-300'] {
+  animation: dark-spin-rotate 4s linear infinite;
+}
+
+.animate-spin.speed-0,
+[speed='0'] {
+  animation: none;
+}
+
+@keyframes dark-spin-rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes dark-animate-right {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 50px 50px;
+  }
+}

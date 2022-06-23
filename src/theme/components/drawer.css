@@ -1,0 +1,58 @@
+.drawer {
+  @apply overflow-x-hidden overflow-y-auto w-75 min-w-75;
+
+  &-mini,
+  &[mini]:not([mini='false']) {
+    @apply min-w-16 max-w-16;
+  }
+
+  &-mini ~ &-left {
+    @apply ml-16;
+  }
+
+  &-autohide-sm,
+  &[autohide='sm'] {
+    @apply hidden sm:block;
+  }
+
+  &-autohide-md,
+  &[autohide='md'] {
+    @apply hidden md:block;
+  }
+
+  &-autohide-lg,
+  &[autohide='lg'] {
+    @apply hidden lg:block;
+  }
+
+  &-autohide-xl,
+  &[autohide='xl'] {
+    @apply hidden xl:block;
+  }
+
+  &-autohide-sm ~ &-left,
+  &[autohide='sm'] ~ &-left,
+  &-autohide-md ~ &-left,
+  &[autohide='md'] ~ &-left,
+  &-autohide-lg ~ &-left,
+  &[autohide='lg'] ~ &-left,
+  &-autohide-xl ~ &-left,
+  &[autohide='xl'] ~ &-left {
+    @apply lg:ml-75;
+  }
+
+  &-responsive-sm,
+  &[responsive='sm'] {
+    @apply min-w-16 max-w-16 sm:min-w-75 sm:max-w-75;
+  }
+
+  &-responsive-lg,
+  &[responsive='lg'] {
+    @apply min-w-16 max-w-16 lg:min-w-75 lg:max-w-75;
+  }
+
+  &-responsive-xl,
+  &[responsive='xl'] {
+    @apply min-w-16 max-w-16 xl:min-w-75 xl:max-w-75;
+  }
+}

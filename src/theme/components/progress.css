@@ -1,0 +1,151 @@
+.progress {
+  @apply h-8;
+
+  .progress-track {
+    @apply h-full;
+    transition: width 100ms ease-in;
+  }
+
+  .progress-bar {
+    @apply relative h-full;
+    background-color: var(--sa-neutral);
+    color: var(--sa-neutral-content);
+  }
+}
+
+.progress-rounded {
+  @apply rounded-full;
+
+  .progress-track {
+    @apply rounded-full;
+  }
+
+  .progress-bar {
+    @apply rounded-full;
+  }
+}
+
+.progress-outline {
+  @apply p-1;
+  border: var(--sa-border) solid var(--sa-neutral);
+}
+
+.progress-primary:not(.progress-outline) {
+  .progress-bar {
+    background-color: var(--sa-primary);
+  }
+}
+
+.progress-outline.progress-primary {
+  border-color: var(--sa-primary);
+
+  .progress-bar {
+    background-color: var(--sa-primary);
+    color: var(--sa-primary-content);
+  }
+}
+
+.progress-secondary:not(.progress-outline) {
+  .progress-bar {
+    background-color: var(--sa-secondary);
+  }
+}
+
+.progress-outline.progress-secondary {
+  border-color: var(--sa-secondary);
+
+  .progress-bar {
+    background-color: var(--sa-secondary);
+    color: var(--sa-secondary-content);
+  }
+}
+
+.progress-accent:not(.progress-outline) {
+  .progress-bar {
+    background-color: var(--sa-accent);
+  }
+}
+
+.progress-outline.progress-accent {
+  border-color: var(--sa-accent);
+
+  .progress-bar {
+    background-color: var(--sa-accent);
+    color: var(--sa-accent-content);
+  }
+}
+
+.progress-neutral:not(.progress-outline) {
+  .progress-bar {
+    background-color: var(--sa-neutral);
+  }
+}
+
+.progress-outline.progress-neutral {
+  border-color: var(--sa-neutral);
+
+  .progress-bar {
+    background-color: var(--sa-neutral);
+    color: var(--sa-neutral-content);
+  }
+}
+
+.progress-info:not(.progress-info) {
+  .progress-bar {
+    background-color: var(--sa-info);
+  }
+}
+
+.progress-outline.progress-info {
+  border-color: var(--sa-info);
+
+  .progress-bar {
+    background-color: var(--sa-info);
+    color: var(--sa-info-content);
+  }
+}
+
+.progress-success:not(.progress-outline) {
+  .progress-bar {
+    background-color: var(--sa-success);
+  }
+}
+
+.progress-outline.progress-success {
+  border-color: var(--sa-success);
+
+  .progress-bar {
+    background-color: var(--sa-success);
+    color: var(--sa-success-content);
+  }
+}
+
+.progress-warning:not(.progress-outline) {
+  .progress-bar {
+    background-color: var(--sa-warning);
+  }
+}
+
+.progress-outline.progress-warning {
+  border-color: var(--sa-warning);
+
+  .progress-bar {
+    background-color: var(--sa-warning);
+    color: var(--sa-warning-content);
+  }
+}
+
+.progress-error:not(.progress-outline) {
+  .progress-bar {
+    background-color: var(--sa-error);
+  }
+}
+
+.progress-outline.progress-error {
+  border-color: var(--sa-error);
+
+  .progress-bar {
+    background-color: var(--sa-error);
+    color: var(--sa-error-content);
+  }
+}

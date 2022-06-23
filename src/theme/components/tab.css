@@ -1,0 +1,39 @@
+.tab {
+  @apply flex items-center justify-center gap-2 px-6 py-4;
+
+  &-container {
+    @apply flex cursor-pointer select-none;
+  }
+
+  &-container-border {
+    @apply border-b-2;
+  }
+
+  &-container-pill {
+    @apply gap-2 px-2;
+  }
+
+  &-container-bar {
+    @apply rounded-l-lg rounded-r-lg overflow-hidden;
+  }
+
+  &-container-bar&-border {
+    @apply border border-dark-700;
+  }
+
+  &-container-bar {
+    @apply border-r last:border-r-0 border-dark-700;
+  }
+
+  &-container-w-full {
+    @apply flex-grow;
+  }
+
+  &-border-active {
+    @apply border-b-2 border-b-purple-400 text-light-200;
+  }
+
+  &-border-spacer {
+    @apply flex-grow border-b-2;
+  }
+}

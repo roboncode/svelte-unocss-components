@@ -1,0 +1,39 @@
+.decor-stripe {
+  content: '';
+  position: relative;
+  background-image: linear-gradient(
+    -45deg,
+    rgba(255, 255, 255, 0.2) 25%,
+    transparent 25%,
+    transparent 50%,
+    rgba(255, 255, 255, 0.2) 50%,
+    rgba(255, 255, 255, 0.2) 75%,
+    transparent 75%,
+    transparent
+  );
+  background-size: 50px 50px;
+}
+
+.decor-border-thin {
+  border: var(--sa-border-thin) solid transparent;
+}
+
+.decor-border {
+  border: var(--sa-border) solid transparent;
+}
+
+.decor-border-thick {
+  border: var(--sa-border-thick) solid transparent;
+}
+
+.decor-round {
+  @apply rounded-lg;
+}
+
+.decor-tile {
+  @apply rounded-none;
+}
+
+.decor-circle {
+  @apply rounded-full;
+}

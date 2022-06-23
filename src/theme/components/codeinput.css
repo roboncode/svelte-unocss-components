@@ -1,0 +1,14 @@
+.codeinput {
+  @apply flex gap-2 items-center;
+
+  input {
+    @apply w-11 h-11 rounded-md text-center text-2xl font-extrabold uppercase;
+  }
+
+  [name='separator'] {
+    &::after {
+      @apply font-bold text-lg text-center opacity-20 px-1;
+      content: '-';
+    }
+  }
+}
